@@ -14,6 +14,7 @@
 <script src="js/welcomeScreen.js"></script>
 <script src="js/sessionScreen.js"></script>
 <script src="js/previousSessionsScreen.js"></script>
+<script src="js/endSessionScreen.js"></script>
 </head>
 
 <body>
@@ -31,12 +32,19 @@
 					<img id="previousExercise" src="./img/decrease.png"
 						alt="Previous Exercise" />
 				</div>
-				<p>Ejercicio</p>
+				<table>
+					<tr>
+						<td id="previousExercise">Prev</td>
+						<td id="nextExercise">Sig</td>
+					</tr>
+				</table>
 				<div class="increase">
 					<img id="nextExercise" src="./img/increase.png"
 						alt="Next Exercise" />
 				</div>
 			</div>
+			<p id="exerciseName" class="txt-exercise-name">Exercise</p>
+			<p id="exerciseCounter" class="txt-exercise-counter">0</p>
 			<button id="exerciseDone" class="btnbottom">¡Bien!</button>
 		</div>
 	</div>

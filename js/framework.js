@@ -36,7 +36,7 @@ function goBack(activeDivId) {
 			exit();
 			break;
 		case "sessionScreen":
-			sessionPause();
+			endSessionScreenShow();
 			break;
 		case "endSessionScreen":
 			sessionResume();

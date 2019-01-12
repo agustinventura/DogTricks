@@ -168,6 +168,16 @@ body {
     font-weight: bold;	
 }
 
+.titletop table {
+	position: absolute;
+    top: 125px;
+    left: 100px;
+    width: 150px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;	
+}
+
 .txt-msg {
 	font-size: 32px;
 }
@@ -177,6 +187,19 @@ body {
     font-weight: bold;
     width: 50%;
     text-align: center;
+}
+
+.txt-exercise-name {
+	font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.txt-exercise-counter {
+	font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0px;
 }
 
 .firstColumn {
