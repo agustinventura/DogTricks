@@ -2,7 +2,7 @@ var session = null;
 
 function init() {
 	setBackKeyListener();
-	//showWelcomeScreen();
+	showWelcomeScreen();
 }
 
 function getNewSession() {

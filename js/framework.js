@@ -1,13 +1,9 @@
 function hideAllScreens() {
-	$("#setsScreen").hide();
-	$("#distanceScreen").hide();
-	$("#restTimeScreen").hide();
-	$("#readyScreen").hide();
-	$("#countdownScreen").hide();
-	$("#currentSetScreen").hide();
-	$("#pauseScreen").hide();
-	$("#currentRestScreen").hide();
-	$("#endScreen").hide();
+	$("#welcomeScreen").hide();
+	$("#sessionScreen").hide();
+	$("#endSessionScreen").hide();
+	$("#sessionReviewScreen").hide();
+	$("#previousSessionsScreen").hide();
 }
 
 function setClickListener(element, listener) {
@@ -36,48 +32,24 @@ function backPressed(e) {
 
 function goBack(activeDivId) {
 	switch (activeDivId) {
-		case "setsScreen":
+		case "welcomeScreen":
 			exit();
 			break;
-		case "distanceScreen":
-			showSetsScreen();
+		case "sessionScreen":
+			sessionPause();
 			break;
-		case "restTimeScreen":
-			showDistanceScreen();
+		case "endSessionScreen":
+			sessionResume();
 			break;
-		case "readyScreen":
-			showRestTimeScreen();
+		case "sessionReviewScreen":
+			showWelcomeScreen();
 			break;
-		case "countdownScreen":
-			showReadyScreen();
-			break;
-		case "currentSetScreen":
-			currentSetPause();
-			break;
-		case "currentRestScreen":
-			currentRestPause();
-			break;
-		case "pauseScreen":
-			hidePauseScreen();
-			break;
-		case "endScreen":
-			showSetsScreen();
+		case "previousSessionsScreen":
+			showWelcomeScreen();
 			break;
 	}
 }
 
 function exit() {
-	tizen.power.release("SCREEN");
-	tizen.humanactivitymonitor.stop('HRM');
     tizen.application.getCurrentApplication().exit();
-}
-
-
-function preprendZerosIfNeeded(number, size) {
-	var numberLength = number.toString().length;
-	var numberOfZeroes = size - numberLength;
-	for (var i=0; i<numberOfZeroes; i++) {
-		number = "0" + number;
-	}
-	return number;
 }
