@@ -29,6 +29,6 @@ function hideSessionReviewScreen() {
 	if (originScreen === "sessionScreen") {
 		showWelcomeScreen();
 	} else {
-		showSessionScreen();
+		showPreviousSessionsScreen();
 	}
 }
