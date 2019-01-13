@@ -12,6 +12,7 @@ function initSession() {
 function showGraphics() {
 	hideAllScreens();
 	setSessionScreenListeners();
+	showExercise();
 	$("#sessionScreen").show();
 }
 
@@ -60,5 +61,7 @@ function resumeSession() {
 }
 
 function endSession() {
-	
+	var jsonSession = JSON.stringify(session);
+	localStorage.setItem(session.date, jsonSession);
+	showSessionReviewScreen("sessionScreen");
 }

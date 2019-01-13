@@ -179,7 +179,7 @@ body {
 }
 
 .txt-msg {
-	font-size: 32px;
+	font-size: 28px;
 }
 
 .txt-msg-center {
@@ -213,6 +213,7 @@ body {
 .sumUpData {
 	width: 100%;
 	text-align: center;
+	margin-top: 70px;
 }
 
 .sumUpTitle {

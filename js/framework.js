@@ -42,7 +42,7 @@ function goBack(activeDivId) {
 			sessionResume();
 			break;
 		case "sessionReviewScreen":
-			showWelcomeScreen();
+			hideSessionReviewScreen();
 			break;
 		case "previousSessionsScreen":
 			showWelcomeScreen();
