@@ -1,3 +1,5 @@
+var listElement = 0;
+
 function showPreviousSessionsScreen() {
 	hideAllScreens();
 	buildSessionsList();
@@ -22,24 +24,22 @@ function buildSessionsList() {
 function scrollItems(ev) {
 	var direction = ev.detail.direction;
     if (direction === "CW") {
-		if (listElement < localStorage.length) {
+		if ((localStorage.length - listElement) > 6) {
+			listElement++;
 			$('.scrollableList').animate(
 				{
 					scrollTop: $('.previousSessions li:nth-child('+ listElement + ')').position().top - $('.previousSessions li:first').position().top
 				}, 
 				'slow');
-			listElement++;
 		}
     } else {
-    	if (listElement > 0) {
+    	if (listElement > 1) {
+    		listElement--;
     		$('.scrollableList').animate(
     				{
     					scrollTop: $('.previousSessions li:nth-child('+ listElement + ')').position().top - $('.previousSessions li:first').position().top
     				}, 
     				'slow');
-    		if (listElement > 1) {
-    			listElement--;
-    		}
     	}
     }
 }
