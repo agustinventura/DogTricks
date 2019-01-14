@@ -18,8 +18,10 @@ function showGraphics() {
 
 function setSessionScreenListeners() {
 	setRotaryListener(changeExercise);
-	setClickListener($("#previousExercise"), showPreviousExercise);
-	setClickListener($("#nextExercise"), showNextExercise);
+	setClickListener($("#previousExerciseArrow"), showPreviousExercise);
+	setClickListener($("#previousExerciseCell"), showPreviousExercise);
+	setClickListener($("#nextExerciseArrow"), showNextExercise);
+	setClickListener($("#nextExerciseCell"), showNextExercise);
 	setClickListener($("#exerciseDone"), increaseExerciseCounter);
 	$(document).on('keyup',function(evt) {
 	    showEndSessionScreen();
