@@ -49,5 +49,6 @@ function showPreviousSession() {
 	var sessionDate = localStorage.key(previousSessionIndex);
 	var JSONsession = localStorage.getItem(sessionDate);
 	session = JSON.parse(JSONsession);
+	session.date = new Date(sessionDate);
 	showSessionReviewScreen("previousSessionScreen");
 }
