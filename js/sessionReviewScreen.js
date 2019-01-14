@@ -16,6 +16,7 @@ function setSessionReviewScreenListeners() {
 }
 
 function setSessionReviewTexts() {
+	$("#sessionDate").text(formatDate(session.date));
 	for (exercise in ExercisesEnum) {
 		if (exercise !== "properties") {
 			var repetitions = session[ExercisesEnum.properties[exercise].code];
