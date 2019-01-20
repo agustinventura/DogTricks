@@ -23,9 +23,6 @@ function setSessionScreenListeners() {
 	setClickListener($("#nextExerciseArrow"), showNextExercise);
 	setClickListener($("#nextExerciseCell"), showNextExercise);
 	setClickListener($("#exerciseDone"), increaseExerciseCounter);
-	$(document).on('keyup',function(evt) {
-	    showEndSessionScreen();
-	});
 
 }
 

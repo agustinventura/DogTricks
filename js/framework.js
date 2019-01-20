@@ -39,12 +39,13 @@ function goBack(activeDivId) {
 			showEndSessionScreen();
 			break;
 		case "endSessionScreen":
-			sessionResume();
+			resumeSession();
 			break;
 		case "sessionReviewScreen":
 			hideSessionReviewScreen();
 			break;
 		case "previousSessionsScreen":
+			console.log("Yendo a welcomeScreen");
 			showWelcomeScreen();
 			break;
 	}

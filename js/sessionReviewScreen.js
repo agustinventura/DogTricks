@@ -10,9 +10,6 @@ function showSessionReviewScreen(screen) {
 
 function setSessionReviewScreenListeners() {
 	setRotaryListener(null);
-	$(document).on('keyup',function(evt) {
-	    goBack("sessionReviewScreen");
-	});
 }
 
 function setSessionReviewTexts() {
@@ -26,7 +23,6 @@ function setSessionReviewTexts() {
 }
 
 function hideSessionReviewScreen() {
-	$("#sessionReviewScreen").hide();
 	if (originScreen === "sessionScreen") {
 		showWelcomeScreen();
 	} else {
