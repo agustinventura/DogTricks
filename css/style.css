@@ -178,11 +178,28 @@ body {
     text-align: center;	
 }
 
+.txt {
+	position: absolute;
+	top: 120px;
+	width: 100%;
+	text-align: center;
+}
+
 .txt-msg {
 	font-size: 28px;
 }
 
 .txt-msg-center {
+	font-size: 32px;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+}
+
+.txt-pause {
+	position: absolute;
+	top: 100px;
+	left: 110px;
 	font-size: 32px;
     font-weight: bold;
     width: 50%;
@@ -213,7 +230,6 @@ body {
 .sumUpData {
 	width: 100%;
 	text-align: center;
-	margin-top: 70px;
 }
 
 .sumUpTitle {
@@ -246,7 +262,6 @@ body {
 	overflow-y: scroll;
 	width: 100%;
 	height: 230px;
-	margin-top: 80px;
 }
 
 ul {
@@ -260,7 +275,6 @@ ul li {
 	background-color: #79BD8F;
 	padding: 5px 0px 5px 0px;
 	margin: 5px 0px;
-	padding-left: 80px;
 }
 
 ul li:hover {

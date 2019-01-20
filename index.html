@@ -1,105 +1,123 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport"
-	content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<meta name="description" content="Running Sets Training App" />
-<title>Dog Tricks</title>
-<link rel="stylesheet" type="text/css" href="css/reset.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/dogTricks.js"></script>
-<script src="js/framework.js"></script>
-<script src="js/welcomeScreen.js"></script>
-<script src="js/sessionScreen.js"></script>
-<script src="js/previousSessionsScreen.js"></script>
-<script src="js/endSessionScreen.js"></script>
-<script src="js/sessionReviewScreen.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Running Sets Training App" />
+    <title>Dog Tricks</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/dogTricks.js"></script>
+    <script src="js/framework.js"></script>
+    <script src="js/welcomeScreen.js"></script>
+    <script src="js/sessionScreen.js"></script>
+    <script src="js/previousSessionsScreen.js"></script>
+    <script src="js/endSessionScreen.js"></script>
+    <script src="js/sessionReviewScreen.js"></script>
 </head>
 
 <body>
-	<div id="welcomeScreen" class="clock">
-		<div class="container">
-			<button id="newSession" class="btntop">Nueva<br/>Sesión</button>
-			<p class="txt-msg-center">Tu perro va a estar encantado</p>
-			<button id="previousSessions" class="btnbottom">Revisar</button>
-		</div>
-	</div>
-	<div id="sessionScreen" class="clock">
-		<div class="container">
-			<div id="sessionScreenTitle" class="titletop">
-				<div class="decrease">
-					<img id="previousExerciseArrow" src="./img/decrease.png"
-						alt="Previous Exercise" />
-				</div>
-				<table>
-					<tr>
-						<td id="previousExerciseCell">Prev</td>
-						<td id="nextExerciseCell">Sig</td>
-					</tr>
-				</table>
-				<div class="increase">
-					<img id="nextExerciseArrow" src="./img/increase.png"
-						alt="Next Exercise" />
-				</div>
-			</div>
-			<p id="exerciseName" class="txt-exercise-name">Exercise</p>
-			<p id="exerciseCounter" class="txt-exercise-counter">0</p>
-			<button id="exerciseDone" class="btnbottom">¡Bien!</button>
-		</div>
-	</div>
-	<div id="endSessionScreen" class="clock">
-		<div class="container">
-			<button id="endSession" class="btnleft">Si</button>
-			<div class="txt-msg-center">
-				¿Has terminado?
-			</div>
-			<button id="continueSession" class="btnright">No</button>
-		</div>
-	</div>
-	<div id="sessionReviewScreen" class="clock">
-		<div class="container">
-			<div id="endScreenTitle" class="titletop">
-				<p id="sessionDate">Fecha</p>
-			</div>
-				<table class="sumUpData">
-					<tr>
-						<td colspan="2" class="sumUpTitle">Ejercicios Correctos</td>
-					</tr>
-					<tr>
-						<td class="leftCell"><span class="txt-msg">Sienta</span></td>
-						<td class="rightCell"><span id="sitRepetitions" class="txt-msg">0</span></td>
-					</tr>
-					<tr>
-						<td class="leftCell"><span class="txt-msg">Quieto</span></td>
-						<td class="rightCell"><span id="stayRepetitions" class="txt-msg">0</span></td>
-					</tr>
-					<tr>
-						<td class="leftCell"><span class="txt-msg">Tumba</span></td>
-						<td class="rightCell"><span id="downRepetitions" class="txt-msg">0</span></td>
-					</tr>
-					<tr>
-						<td class="leftCell"><span class="txt-msg">Ven</span></td>
-						<td class="rightCell"><span id="comeRepetitions" class="txt-msg">0</span></td>
-					</tr>
-					<tr>
-						<td class="leftCell"><span class="txt-msg">Junto</span></td>
-						<td class="rightCell"><span id="heelRepetitions" class="txt-msg">0</span></td>
-					</tr>
-				</table>
-		</div>
-	</div>
-	<div id="previousSessionsScreen" class="clock">
-		<div class="container">
-			<div id="endScreenTitle" class="titletop">
-				<p>Sesiones</p>
-			</div>
-			<div class="scrollableList">
-				<ul id="previousSessionsList" class="previousSessions">
-				</ul>
-			</div>
-		</div>
-	</div>
+    <div id="welcomeScreen" class="clock">
+        <div class="container">
+            <button id="newSession" class="btntop">Nueva
+                <br/>Sesión</button>
+            <div class="txt">
+                <p class="txt-msg">Tu perro va a estar encantado</p>
+            </div>
+            <button id="previousSessions" class="btnbottom">Revisar</button>
+        </div>
+    </div>
+    <div id="sessionScreen" class="clock">
+        <div class="container">
+            <div id="sessionScreenTitle" class="titletop">
+                <div class="decrease">
+                    <img id="previousExerciseArrow" src="./img/decrease.png" alt="Previous Exercise" />
+                </div>
+                <table>
+                    <tr>
+                        <td id="previousExerciseCell">Prev</td>
+                        <td id="nextExerciseCell">Sig</td>
+                    </tr>
+                </table>
+                <div class="increase">
+                    <img id="nextExerciseArrow" src="./img/increase.png" alt="Next Exercise" />
+                </div>
+            </div>
+            <div class="txt">
+                <p id="exerciseName" class="txt-exercise-name">Exercise</p>
+                <p id="exerciseCounter" class="txt-exercise-counter">0</p>
+            </div>
+            <button id="exerciseDone" class="btnbottom">¡Bien!</button>
+        </div>
+    </div>
+    <div id="endSessionScreen" class="clock">
+        <div class="container">
+            <button id="endSession" class="btnleft">Si</button>
+            <div class="txt-pause">
+                ¿Has terminado?
+            </div>
+            <button id="continueSession" class="btnright">No</button>
+        </div>
+    </div>
+    <div id="sessionReviewScreen" class="clock">
+        <div class="container">
+            <div id="endScreenTitle" class="titletop">
+                <p id="sessionDate">Fecha</p>
+            </div>
+            <div class="txt">
+                <table class="sumUpData">
+                    <tr>
+                        <td colspan="2" class="sumUpTitle">Ejercicios Correctos</td>
+                    </tr>
+                    <tr>
+                        <td class="leftCell"><span class="txt-msg">Sienta</span>
+                        </td>
+                        <td class="rightCell"><span id="sitRepetitions" class="txt-msg">0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="leftCell"><span class="txt-msg">Quieto</span>
+                        </td>
+                        <td class="rightCell"><span id="stayRepetitions" class="txt-msg">0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="leftCell"><span class="txt-msg">Tumba</span>
+                        </td>
+                        <td class="rightCell"><span id="downRepetitions" class="txt-msg">0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="leftCell"><span class="txt-msg">Ven</span>
+                        </td>
+                        <td class="rightCell"><span id="comeRepetitions" class="txt-msg">0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="leftCell"><span class="txt-msg">Junto</span>
+                        </td>
+                        <td class="rightCell"><span id="heelRepetitions" class="txt-msg">0</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="previousSessionsScreen" class="clock">
+        <div class="container">
+            <div id="endScreenTitle" class="titletop">
+                <p>Sesiones</p>
+            </div>
+            <div class="txt">
+                <div class="scrollableList">
+                    <ul id="previousSessionsList" class="previousSessions">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

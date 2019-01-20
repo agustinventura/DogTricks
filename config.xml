@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://www.digitalsingular.com/DogTricks" version="1.0.0" viewmodes="maximized">
-    <tizen:application id="liQXGYCnBS.DogTricks" package="liQXGYCnBS" required_version="3.0"/>
+    <tizen:application id="liQXGYCnBS.DogTricks" package="liQXGYCnBS" required_version="2.3.2"/>
     <author href="http://www.digitalsingular.com/" email="agustinventura@gmail.com">Agustín Ventura Carrasco</author>
     <content src="index.html"/>
     <description xml:lang="es-es">Dog Tricks es una aplicación para apuntar y revisar tus sesiones de adiestramiento básico con tu perro. Podrás indicar los ejercicios que ha realizado correctamente y revisar sesiones para compararlas.</description>
@@ -9,4 +9,5 @@
     <name>DogTricks</name>
     <name xml:lang="es-es">Dog Tricks</name>
     <tizen:profile name="wearable"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
 </widget>
